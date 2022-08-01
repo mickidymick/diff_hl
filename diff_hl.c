@@ -69,15 +69,15 @@ int yed_plugin_boot(yed_plugin *self) {
     }
 
     if (yed_get_var("diff-hl-location") == NULL) {
-        yed_set_var("diff-hl-location", "fg !6");
+        yed_set_var("diff-hl-location", "&cyan");
     }
 
     if (yed_get_var("diff-hl-add") == NULL) {
-        yed_set_var("diff-hl-add", "fg !2");
+        yed_set_var("diff-hl-add", "&green");
     }
 
     if (yed_get_var("diff-hl-remove") == NULL) {
-        yed_set_var("diff-hl-remove", "fg !1");
+        yed_set_var("diff-hl-remove", "&red");
     }
 
     YED_PLUG_VERSION_CHECK();
